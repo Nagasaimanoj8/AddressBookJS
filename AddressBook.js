@@ -43,6 +43,9 @@ class Contact {
             ", City : " + this.city + ", State : " + this.state + ", Zip : " + this.zip + ", Phone No : " + this.phoneNo + ", Email : " + this.email;
     }
 }
-
-let contact = new Contact("Bharat", "Weasly", "LosAngels", "UN", "LA", "0127654", "0168989898", "weasly@gmail.com");
-console.log(contact.toString());
+try {
+    let contact = new Contact("Bharat", "Weasly", "UN", "LosAngles", "LA", "0127654", "0168898989898", "weasly@gmail.com");
+    console.log(contact.toString());
+} catch (e) {
+    console.error(e)
+}
